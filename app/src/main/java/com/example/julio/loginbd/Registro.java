@@ -20,7 +20,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
     private EditText txtnombre,txtusuarioR,txtemailR,txtpasswordR;
     private Button btnregistro,btncancelarR;
 
-    private static final String REGISTER_URL="http://localhost/rutasUtec/registro.php";
+    private static final String REGISTER_URL="http://192.168.1.10/rutasUtec/registro.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

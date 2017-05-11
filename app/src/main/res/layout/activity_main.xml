@@ -23,4 +23,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnlogin"
         android:text="login"/>
+
+  <Button
+      android:id="@+id/registrarbtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="no tienes una cuenta click aqui" />
 </LinearLayout>

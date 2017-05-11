@@ -25,10 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private EditText txtusuario,txtpass;
     private Button btnlogin;
+    private Button registrarbtn;
 
     public static final String USER_NAME="USER_NAME";
     public static final String PASSWORD="PASSWORD";
-    private static final String LOGIN_URL = "http://localhost/rutasUtec/login.php";
+    private static final String LOGIN_URL = "http://192.168.1.10/rutasUtec/login.php";
 
 
     @Override
@@ -38,7 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txtusuario = (EditText)findViewById(R.id.txtusuario);
         txtpass=(EditText)findViewById(R.id.txtpass);
         btnlogin=(Button)findViewById(R.id.btnlogin);
+        registrarbtn=(Button)findViewById(R.id.registrarbtn);
         btnlogin.setOnClickListener(this);
+        registrarbtn.setOnClickListener(this);
     }
     private void login(){
         String username=txtusuario.getText().toString().trim();
@@ -87,6 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if(v ==btnlogin){
             login();
+        }
+        if (v==registrarbtn){
+            Intent intent = new Intent(getApplicationContext(),Registro.class);
+            startActivity(intent);
         }
     }
 }
