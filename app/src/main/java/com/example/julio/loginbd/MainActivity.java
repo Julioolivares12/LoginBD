@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(intent);
                 }
                 else{
-                    Toast.makeText(MainActivity.this,"error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,s,Toast.LENGTH_LONG).show();
                 }
             }
 
