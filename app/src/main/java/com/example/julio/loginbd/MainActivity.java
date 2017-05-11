@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public static final String USER_NAME="USER_NAME";
     public static final String PASSWORD="PASSWORD";
-    private static final String LOGIN_URL = "http://192.168.1.10/rutasUtec/login.php";
+    private static final String LOGIN_URL = "http://rutasutec.webcindario.com/login.php";
 
 
     @Override
